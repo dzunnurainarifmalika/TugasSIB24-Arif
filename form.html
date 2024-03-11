@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran</title>
+</head>
+<body>
+    <form action="#" method="post" enctype="multipart/form-data">
+        <label for="nama">Nama:</label><br>
+        <input type="text" id="nama" name="nama" required><br><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="no_hp">No. HP:</label><br>
+        <input type="tel" id="no_hp" name="no_hp" pattern="[0-9]{10,}" required><br><br>
+        
+        <label for="jenis_kelamin">Jenis Kelamin:</label><br>
+        <input type="radio" id="laki_laki" name="jenis_kelamin" value="Laki-laki" required>
+        <label for="laki_laki">Laki-laki</label><br>
+        <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan">
+        <label for="perempuan">Perempuan</label><br><br>
+        
+        <label for="prodi">Prodi:</label><br>
+        <select id="prodi" name= "pilih" required>
+            <option value="Informatika">Pilih</option>
+            <option value="Informatika">Informatika</option>
+            <option value="Teknik Mesin">Teknik Mesin</option>
+            <option value="Teknik Otomotif">Teknik Otomotif</option>
+        </select><br><br>
+        
+        <label for="hobi">Hobi:</label><br>
+        <input type="checkbox" id="membaca" name="hobi[]" value="Membaca">
+        <label for="membaca">Membaca</label><br>
+        <input type="checkbox" id="menulis" name="hobi[]" value="Menulis">
+        <label for="menulis">Menulis</label><br>
+        <input type="checkbox" id="menyanyi" name="hobi[]" value="Menyanyi">
+        <label for="menyanyi">Menyanyi</label><br>
+        <input type="checkbox" id="olahraga" name="hobi[]" value="Olahraga">
+        <label for="olahraga">Olahraga</label><br><br>
+        
+        <label for="alamat">Alamat:</label><br>
+        <textarea id="alamat" name="alamat" required></textarea><br><br>
+        
+        <label for="foto">Foto Diri:</label><br>
+        <input type="file" id="foto" name="foto" accept="image/*"><br><br>
+        
+        <input type="submit" value="Daftar">
+    </form>
+</body>
+</html>
